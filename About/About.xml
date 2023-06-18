@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>The Liberators</name>
+  <author>Slomow</author>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <description>The time has come, a formidable force Conquering The rim and you are in the middle of their warth, they will kill everything in their path, their main goal is to strip your planet dry out of any materials.
+
+    The liberator faction uses ranged weaponary as their main weapons and the liberators uses armoured vehicles to do their wars and even fleet of starships...
+  </description>
+  <modDependencies>
+    <li>
+      <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
+      <displayName>Enable Oversized Weapons</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2543371889</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <packageId>slomow.TLRS</packageId>
+
+  <url>a</url>
+  <description>
+   a
+  </description>
+</ModMetaData>
