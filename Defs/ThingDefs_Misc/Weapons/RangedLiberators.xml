@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BaseBullet">
+        <defName>TLRS_Bullet_MIRifle</defName>
+        <label>Mobile Infrantry Rifle bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/TLRS_projectile_small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <speed>90</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>TLRS_Gun_MIRifle</defName>
+        <label>MIR-30</label>
+        <description>A general-purpose gas-operated assault rifle for fast and mobile infrantry.first developed using the assault rifle as a base and then after engineering decision decided to change the model for a better efficientcy,the name of this gus were named after the 30th generation, after the service the infantry combat effectiveness highly increased due to the guns seemingly.</description>
+        <graphicData>
+            <texPath>Things/WeaponRanged/TLRS_Mobile_Infratry_Rifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisite>TLRSRifleResearch</researchPrerequisite>              <!-- temporary research -->
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+        <statBases>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyLong>0.55</AccuracyLong>
+            <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <Plasteel>40</Plasteel>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+            <ComponentArmoured>1</ComponentArmoured>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>TLRS_Bullet_MIRifle</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>40.9</range>
+                <burstShotCount>7</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>Shot_AssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <weaponTags Inherit="False">
+            <li>TLRS_InfrantryWeapon</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!-- STRIDER SHOTGUN -->
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>TLRS_Bullet_SShotgun</defName>
+        <label>Strider Shotgun bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/TLRS_projectile_small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>85</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>TLRS_Gun_StriderShotgun</defName>
+        <label>Strider Shotgun</label>
+        <description>A powerful gas-operated shotgun for deadly shot capable of killing anyone on its front.after years of using the charge shotgun in the army, a decision was made to cut cost due to charge shotgun was too expensive for a mass army, the engineering division eventually comes up with strider, a shotgun that instead of pellets, using bullets and burst them out in a cone shape in a long range.this weapon is commonly used as a suppression weapon that both effective at range or at close range</description>
+        <graphicData>
+            <texPath>Things/WeaponRanged/TLRS_Strider_Shotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisite>TLRSShotgunResearch</researchPrerequisite>              <!-- temporary research -->
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+        <statBases>
+            <WorkToMake>15000</WorkToMake>
+            <Mass>2.5</Mass>
+            <AccuracyTouch>0.85</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.35</AccuracyLong>
+            <RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <Plasteel>100</Plasteel>
+            <ComponentIndustrial>15</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <ComponentArmoured>1</ComponentArmoured>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>TLRS_Bullet_SShotgun</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
+                <range>24.9</range>
+                <burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                <soundCast>Shot_AssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <weaponTags Inherit="False">
+            <li>TLRS_InfrantryWeapon</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!-- SniperRifle -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>TLRS_Bullet_RFS_Rifle</defName>
+        <label>RFS Bullet</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>29</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+            <armorPenetrationBase>1.1</armorPenetrationBase>
+            <speed>100</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/TLRS_projectile_long</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>TLRS_Gun_RFS_Rifle</defName>
+        <label>RFSR-22</label>
+        <description>A powerful lightweight sniper rifle that used by the recon division of the liberation army,the division was originally given anti material sniper as their primary, but after their lack of shooting speed, this sniper was eventally abandon in favor of a fast firing sniper rifle,this sniper was made with intention for rapid fire while still maintaining its damage, in result this weapon was developed and was given to the recon division.</description>
+        <graphicData>
+            <texPath>Things/WeaponRanged/TLRS_sniper</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <WorkToMake>60000</WorkToMake>
+            <Mass>4.5</Mass>
+            <AccuracyTouch>0.6</AccuracyTouch>
+            <AccuracyShort>0.7</AccuracyShort>
+            <AccuracyMedium>0.8</AccuracyMedium>
+            <AccuracyLong>1</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MoveSpeed>0.25</MoveSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>60</Steel>
+            <Plasteel>120</Plasteel>
+            <ComponentIndustrial>16</ComponentIndustrial>
+            <ComponentSpacer>6</ComponentSpacer>
+            <ComponentArmoured>2</ComponentArmoured>
+        </costList>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisite>TLRSSniperResearch</researchPrerequisite>              <!-- temporary research -->
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>TLRS_Bullet_RFS_Rifle</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>64.9</range>
+                <soundCast>TLRS_Shot_RFSniperRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <weaponTags Inherit="False">
+            <li>TLRS_SniperWeapon</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!-- Anti Tank Rifle -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>TLRS_Bullet_AT_Rifle</defName>
+        <label>ATR Bullet</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>60</damageAmountBase>
+            <stoppingPower>5</stoppingPower>
+            <armorPenetrationBase>5.0</armorPenetrationBase>
+            <speed>100</speed>
+        </projectile>
+        <graphicData>
+            <texPath>Things/Projectile/TLRS_projectile_long</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>2</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>TLRS_Gun_AT_Rifle</defName>
+        <label>Anti Tank Rifle</label>
+        <description>An experimental weapon developed by the liberation in intention to pierce through tanks armours, this weapon is chambered in 30mm round,this weapon was developed to counter tanks after the enemy of the liberation faced with an oponent tank with thick armour in the planet of charka,the soldiers that uses this weapons was commonly called limb destroyer,divisions that uses this weapon was rarely found in the ranks of the liberators due to the tanks they posses are much more effective.</description>
+        <graphicData>
+            <texPath>Things/WeaponRanged/TLRS_Anti_Tank_Rifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <WorkToMake>60000</WorkToMake>
+            <Mass>6.0</Mass>
+            <AccuracyTouch>0.2</AccuracyTouch>
+            <AccuracyShort>0.8</AccuracyShort>
+            <AccuracyMedium>0.8</AccuracyMedium>
+            <AccuracyLong>1</AccuracyLong>
+            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <costList>
+            <Steel>30</Steel>
+            <Plasteel>150</Plasteel>
+            <ComponentIndustrial>18</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+            <ComponentArmoured>1</ComponentArmoured>
+        </costList>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisite>TLRSATResearch</researchPrerequisite>              <!-- temporary research -->
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>TLRS_Bullet_AT_Rifle</defaultProjectile>
+                <warmupTime>3.0</warmupTime>
+                <range>44.9</range>
+                <soundCast>TLRS_Shot_AT-ACRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <weaponTags Inherit="False">
+            <li>TLRS_AntiTankWeapon</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseGun">
+        <defName>TLRS_antiTankRocket</defName>
+        <label>Anti Tank Rocket Launcher</label>
+        <description>A single-use rocket launcher that fires one large-bore High Explosive Anti Tank (HEAT).this weapon was commonly used at the planet of eventide to destroys fortified bunkers owned by the enemy of liberation, this weapon development was rushed due to the ongoing war they have,this weapon also made to be mass produced ans quickly distributed to the liberation army to deal with their enemies,the effectiveness with this weapon are at its suprise attacks destroying enemy armoured vehicles.</description>
+        <tickerType>Normal</tickerType>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Things/WeaponRanged/TLRS_Anti_Tank_Rocket</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>3</Mass>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <AccuracyTouch>1</AccuracyTouch>
+            <AccuracyShort>0.9</AccuracyShort>
+            <AccuracyMedium>0.8</AccuracyMedium>
+            <AccuracyLong>0.7</AccuracyLong>
+        </statBases>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisite>TLRSscrapResearch</researchPrerequisite>              <!-- temporary research -->
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+        <costList>
+            <Steel>10</Steel>
+            <Plasteel>20</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Shell_HighExplosive>3</Shell_HighExplosive>
+        </costList>
+        <techLevel>Spacer</techLevel>
+        <weaponTags>
+            <li>TLRS_AntiTankRocket</li>
+        </weaponTags>
+        <relicChance>0</relicChance>
+        <verbs>
+            <li>
+                <verbClass>Verb_ShootOneUse</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>TLRS_Bullet_ATRocket</defaultProjectile>
+                <forcedMissRadius>0.5</forcedMissRadius>
+                <warmupTime>1.5</warmupTime>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+                <range>50</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>InfernoCannon_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <onlyManualCast>true</onlyManualCast>
+                <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11.7</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.9</explosiveRadius>
+                <explosiveDamageType>TLRS_ATBomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>TLRS_Bullet_ATRocket</defName>
+        <label>Anti Tank rocket</label>
+        <graphicData>
+            <texPath>Things/Projectile/Rocket_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>TLRS_ATBomb</damageDef>
+            <!-- Use default damage from explosion def -->
+            <explosionRadius>1.5</explosionRadius>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>
