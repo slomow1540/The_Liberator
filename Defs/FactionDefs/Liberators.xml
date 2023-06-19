@@ -18,7 +18,7 @@
         <factionIconPath>World/LiberatorsFaction</factionIconPath>
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
         <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-        <allowedCultures><li>Rustican</li></allowedCultures>
+        <allowedCultures><li>TLRS_culture</li></allowedCultures>
         <disallowedMemes>
                <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
                <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
