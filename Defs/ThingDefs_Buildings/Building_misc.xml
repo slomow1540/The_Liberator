@@ -15,7 +15,7 @@
         <drawerType>MapMeshOnly</drawerType>
         <repairEffect>ConstructMetal</repairEffect>
         <forceDebugSpawnable>true</forceDebugSpawnable>
-        <!--<designationCategory Inherit='False' />-->
+        <designationCategory Inherit='False' />
         <building>
             <buildingTags>
                 <li>TLRS_LiberatorShip</li>
@@ -33,7 +33,6 @@
                 <multiplier>0</multiplier>
             </li>
         </damageMultipliers>
-        <designationCategory>Ship</designationCategory>           <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
     </ThingDef>
 
     <ThingDef ParentName="TLRS_furniture">

@@ -17,7 +17,7 @@
         <drawerType>MapMeshOnly</drawerType>
         <repairEffect>ConstructMetal</repairEffect>
         <forceDebugSpawnable>true</forceDebugSpawnable>
-        <!--<designationCategory Inherit='False' />-->
+        <designationCategory Inherit='False' />
         <placeWorkers>
             <li>PlaceWorker_NotUnderRoof</li>
         </placeWorkers>
@@ -38,7 +38,6 @@
                 <multiplier>0</multiplier>
             </li>
         </damageMultipliers>
-        <designationCategory>Ship</designationCategory>           <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
     </ThingDef>
 
     <!-- 2x2 Trooper Storage -->

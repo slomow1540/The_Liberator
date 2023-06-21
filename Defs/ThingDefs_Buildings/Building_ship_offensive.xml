@@ -58,8 +58,7 @@
             <turretBurstCooldownTime>1.5</turretBurstCooldownTime>
             <turretBurstWarmupTime>1</turretBurstWarmupTime>
         </building>
-        <!--<designationCategory Inherit='False' />-->
-        <designationCategory>Ship</designationCategory>
+        <designationCategory Inherit='False' />
     </ThingDef>
 
     <ThingDef ParentName="BaseWeaponTurret">
@@ -165,8 +164,7 @@
             <turretBurstCooldownTime>2</turretBurstCooldownTime>
             <turretBurstWarmupTime>1</turretBurstWarmupTime>
         </building>
-        <!--<designationCategory Inherit='False' />-->
-        <designationCategory>Ship</designationCategory>
+        <designationCategory Inherit='False' />
     </ThingDef>
 
     <ThingDef ParentName="BaseWeaponTurret">
@@ -280,8 +278,7 @@
             <turretBurstCooldownTime>1</turretBurstCooldownTime>
             <turretBurstWarmupTime>1</turretBurstWarmupTime>
         </building>
-        <!--<designationCategory Inherit='False' />-->
-        <designationCategory>Ship</designationCategory>
+        <designationCategory Inherit='False' />
     </ThingDef>
 
     <!-- 2x2 autocannon turret -->
@@ -342,8 +339,7 @@
             <turretBurstCooldownTime>2</turretBurstCooldownTime>
             <turretBurstWarmupTime>1</turretBurstWarmupTime>
         </building>
-        <!--<designationCategory Inherit='False' />-->
-        <designationCategory>Ship</designationCategory>
+        <designationCategory Inherit='False' />
     </ThingDef>
 
     <ThingDef ParentName="BaseWeaponTurret">
@@ -434,8 +430,7 @@
             <turretBurstCooldownTime>2</turretBurstCooldownTime>
             <turretBurstWarmupTime>1</turretBurstWarmupTime>
         </building>
-        <!--<designationCategory Inherit='False' />-->
-        <designationCategory>Ship</designationCategory>
+        <designationCategory Inherit='False' />
     </ThingDef>
 
     <ThingDef ParentName="BaseWeaponTurret">
