@@ -23,18 +23,18 @@
         </comps>
         <projectileWhenLoaded>TLRS_Bullet_Shell_Thermobaric</projectileWhenLoaded>
         <costList>
-            <Steel>10</Steel>
-            <Chemfuel>45</Chemfuel>
-            <Plasteel>10</Plasteel>
-            <ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>15</Steel>
+            <Chemfuel>300</Chemfuel>
+            <Plasteel>15</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <costListForDifficulty>
             <difficultyVar>classicMortars</difficultyVar>
             <costList>
-                <Steel>15</Steel>
-                <Chemfuel>50</Chemfuel>
-                <Plasteel>15</Plasteel>
-                <ComponentIndustrial>2</ComponentIndustrial>
+                <Steel>20</Steel>
+                <Chemfuel>350</Chemfuel>
+                <Plasteel>20</Plasteel>
+                <ComponentIndustrial>5</ComponentIndustrial>
             </costList>
         </costListForDifficulty>
         <recipeMaker>
