@@ -163,6 +163,19 @@
                         </li>
                     </value>
                 </li>
+				
+				<li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="TLRS_Gun_LMG"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalsh</def>
+                            <drawSize>(1.6,1.6)</drawSize>
+                            <offsets>
+                                <li>(0.52,0.05)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
 
                 <li Class="PatchOperationAddModExtension">
                     <xpath>Defs/ThingDef[defName="TLRS_Gun_StriderShotgun"]</xpath>

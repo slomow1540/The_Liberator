@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-  <name>The Liberators</name>
+  <name>The Liberators no Vehicle framework</name>
   <author>Slomow</author>
   <supportedVersions>
     <li>1.4</li>
@@ -22,10 +22,11 @@
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
     </li>
   </modDependencies>
+  <loadAfter>
+		<li>CarnySenpai.EnableOversizedWeapons</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</loadAfter>
   <packageId>slomow.TLRS</packageId>
 
-  <url>a</url>
-  <description>
-   a
-  </description>
+  <url>https://github.com/slomow1540/The_Liberator</url>
 </ModMetaData>
