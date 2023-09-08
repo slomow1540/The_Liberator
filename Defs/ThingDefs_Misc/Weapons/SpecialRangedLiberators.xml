@@ -13,7 +13,7 @@
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
             <speed>200</speed>
-            <damageDef>Bomb</damageDef>
+            <damageDef>TLRS_tankBomb</damageDef>
             <explosionRadius>5</explosionRadius>
             <ai_IsIncendiary>false</ai_IsIncendiary>
             <explosionDelay>0</explosionDelay>
@@ -56,7 +56,7 @@
                 <forcedMissRadius>2.5</forcedMissRadius>
                 <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
                 <warmupTime>1.0</warmupTime>
-                <range>60</range>
+                <range>40</range>
                 <burstShotCount>1</burstShotCount>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>
@@ -137,7 +137,7 @@
                 <forcedMissRadius>0.5</forcedMissRadius>
                 <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
                 <warmupTime>1.0</warmupTime>
-                <range>50</range>
+                <range>35</range>
                 <burstShotCount>7</burstShotCount>
                 <targetParams>
                     <canTargetLocations>true</canTargetLocations>

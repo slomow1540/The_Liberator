@@ -28,7 +28,7 @@
     <ThingDef ParentName="BaseTLRSVehicle">
         <defName>TLRS_Race_Tank</defName>
         <label>tank</label>
-        <description>A main battle tank. Used on the frontline of ground assaults, and in urban combat. this kind of tank was developed by the development collaboration of research and engineering department after the failure of the 6th generation tanks, these 7th generation tanks are made with armour stronger than catapract and armament more advanced than the previous models, the liberation has planned to make the tank invulnerable to any kinds of attacks with energy shield, robust weapons such as lancer turrets that are capable to shoot a piercing laser to counter the strongest armour, but the program to make this tank as advanced as possible was cut due to the liberation's army demand for a reliable, cheap to produce, and effective combat ability.</description>
+        <description>A main battle tank. Used on the frontlines of ground assaults and in urban combat. This kind of tank was developed by the development collaboration of the research and engineering departments after the failure of the 6th generation tanks. These 7th generation tanks are made with armor stronger than catapract and armament more advanced than the previous models. The liberation has planned to make the tank invulnerable to any kinds of attacks with an energy shield and robust weapons such as lancer turrets that are capable of shooting a piercing laser to counter the strongest armor, but the program to make this tank as advanced as possible was cut due to the army's  demand for a reliable, cheap to produce, and effective combat ability.</description>
         <statBases>
             <MoveSpeed>4</MoveSpeed>
             <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
@@ -48,10 +48,11 @@
         </tools>
         <race>
             <intelligence>ToolUser</intelligence>
+			<mechWeightClass>UltraHeavy</mechWeightClass>
             <thinkTreeMain>TLRSTank</thinkTreeMain>
             <body>TankMainChassis</body>
-            <baseBodySize>4.5</baseBodySize>
-            <baseHealthScale>20</baseHealthScale>
+            <baseBodySize>6.5</baseBodySize>
+            <baseHealthScale>16</baseHealthScale>
             <lifeStageAges>
                 <li>
                     <def>TLRSTankFullyFormed</def>

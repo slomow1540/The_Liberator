@@ -161,7 +161,7 @@
             <combatPower>100</combatPower>
             <ai_combatDangerous>true</ai_combatDangerous>
             <turretGunDef>TLRS_Gun_DualCannon</turretGunDef>
-            <turretBurstCooldownTime>2</turretBurstCooldownTime>
+            <turretBurstCooldownTime>6</turretBurstCooldownTime>
             <turretBurstWarmupTime>1</turretBurstWarmupTime>
         </building>
         <designationCategory Inherit='False' />
@@ -275,7 +275,7 @@
             <combatPower>100</combatPower>
             <ai_combatDangerous>true</ai_combatDangerous>
             <turretGunDef>TLRS_Turret_MachineGunTurret</turretGunDef>
-            <turretBurstCooldownTime>1</turretBurstCooldownTime>
+            <turretBurstCooldownTime>2</turretBurstCooldownTime>
             <turretBurstWarmupTime>1</turretBurstWarmupTime>
         </building>
         <designationCategory Inherit='False' />
@@ -427,7 +427,7 @@
             <combatPower>100</combatPower>
             <ai_combatDangerous>true</ai_combatDangerous>
             <turretGunDef>TLRS_Gun_TripleCannon</turretGunDef>
-            <turretBurstCooldownTime>2</turretBurstCooldownTime>
+            <turretBurstCooldownTime>5</turretBurstCooldownTime>
             <turretBurstWarmupTime>1</turretBurstWarmupTime>
         </building>
         <designationCategory Inherit='False' />

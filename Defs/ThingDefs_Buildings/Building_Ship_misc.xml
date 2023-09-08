@@ -157,7 +157,7 @@
         <placeWorkers>
             <li>PlaceWorker_NotUnderRoof</li>
         </placeWorkers>
-        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <building>
             <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
         </building>

@@ -3,16 +3,13 @@
   <ResearchProjectDef>
     <defName>TLRSscrapResearch</defName>
     <label>Armoured Component analyzation</label>
-    <description>analyzing component used by the liberator in efford to reverse engineer their enquipment and weapons.</description>
-    <baseCost>2500</baseCost>
+    <description>analyzing components used by the liberators in order to reverse engineer their equipment and weapons.</description>
+    <baseCost>1500</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TLRSReseachDefTab</tab>
     <prerequisites>
       <li>PrecisionRifling</li>
     </prerequisites>
-    <requiredStudied>
-      <li>ComponentArmoured</li>
-    </requiredStudied>
     <researchViewX>0.00</researchViewX>
     <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
@@ -20,13 +17,16 @@
   <ResearchProjectDef>
     <defName>TLRSRifleResearch</defName>
     <label>Reverse engineer MIR-30 Rifle</label>
-    <description>Atempt to Reverse engineer the infamous MIR-30 rifle used by the liberator army based on the armoured component structure.</description>
+    <description>attempt to Reverse engineer the infamous MIR-30 rifle used by the Liberator Army based on the armored component structure.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TLRSReseachDefTab</tab>
     <prerequisites>
       <li>TLRSscrapResearch</li>
     </prerequisites>
+	<requiredStudied>
+      <li>ComponentArmoured</li>
+    </requiredStudied>
     <researchViewX>1.00</researchViewX>
     <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
@@ -34,13 +34,16 @@
   <ResearchProjectDef>
     <defName>TLRSShotgunResearch</defName>
     <label>Reverse engineer Strider Shotgun</label>
-    <description>Atempt to Reverse engineer the infamous Strider Shotgun used by the liberator army based on the armoured component structure.</description>
+    <description>attempt to Reverse engineer the infamous Strider Shotgun used by the Liberator Army based on the armored component structure.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TLRSReseachDefTab</tab>
     <prerequisites>
       <li>TLRSscrapResearch</li>
     </prerequisites>
+	<requiredStudied>
+      <li>ComponentArmoured</li>
+    </requiredStudied>
     <researchViewX>1.00</researchViewX>
     <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
@@ -48,7 +51,7 @@
   <ResearchProjectDef>
     <defName>TLRSSniperResearch</defName>
     <label>High-caliber Precision Ammo</label>
-    <description>An high caliber precision ammo development,with the armoured component, guns and buildings cna be developed to withstand powerfull guns without breaking.</description>
+    <description>high-caliber precision ammo development, guns and buildings can be developed to withstand powerful guns without breaking.</description>
     <baseCost>7500</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TLRSReseachDefTab</tab>
@@ -58,11 +61,25 @@
     <researchViewX>2.00</researchViewX>
     <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>TLRSLMGResearch</defName>
+    <label>Railgun Caliber Technology</label>
+    <description>Ammo technology with railgun enhancement allows the weapon to maintain fire and even piercing capability, but due to the gun's condition, it will need to charge up before dumping a lot of ammo at a location.</description>
+    <baseCost>7500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>TLRSReseachDefTab</tab>
+    <prerequisites>
+      <li>TLRSSniperResearch</li>
+    </prerequisites>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>TLRSAutocannonResearch</defName>
     <label>High-explosive RapidFire System</label>
-    <description>Develop a system that capable to shoot continous stream of high explosive sheels without breaking the weapon down.</description>
+    <description>Develop a system that is capable of shooting a continuous stream of high-explosive sheels without breaking the weapon down.</description>
     <baseCost>7500</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TLRSReseachDefTab</tab>
@@ -72,11 +89,26 @@
     <researchViewX>2.00</researchViewX>
     <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
+  
+  <!-- <ResearchProjectDef>
+    <defName>TLRSTankResearch</defName>
+    <label>Tank Research</label>
+    <description>by analizing the enquipments, weapons, and also field observation, atempt to replicate the armored vehicle technology owned by the liberator.</description>
+    <baseCost>7500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>TLRSReseachDefTab</tab>
+    <prerequisites>
+      <li>TLRSAutocannonResearch</li>
+	  <li>VVE_CombatVehicles</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef> -->
 
   <ResearchProjectDef>
     <defName>TLRSATResearch</defName>
     <label>Anti-Material Rifle</label>
-    <description>with an advanced weapon system and durability, an atempt to research an powerfull mobile gun that can penetrate the strongest of armours can be developed.</description>
+    <description>With an advanced weapon system and durability, an attempt to research a powerful mobile gun that can penetrate the strongest of armors can be made.</description>
     <baseCost>10000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TLRSReseachDefTab</tab>
@@ -90,7 +122,7 @@
   <ResearchProjectDef>
     <defName>TLRSCannonResearch</defName>
     <label>Anti-Material Shell</label>
-    <description>develop an weapon system that could effectively clear tank treats with an powerfull shells capable to turning everything it touch into goo of junk.</description>
+    <description>develop a weapon system that could effectively clear tanks with powerful shells capable of turning everything it touches into gooey junk.</description>
     <baseCost>10000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TLRSReseachDefTab</tab>
@@ -104,7 +136,7 @@
   <ResearchProjectDef>
     <defName>TLRSThermobaricResearch</defName>
     <label>Vacuum based weaponary</label>
-    <description>uses oxygen from the surrounding air to generate a high-temperature explosion, and utilize it for weapon manufacturing.</description>
+    <description>uses oxygen from the surrounding air to generate a high-temperature explosion and utilize it for weapon manufacturing.</description>
     <baseCost>15000</baseCost>
     <techLevel>Spacer</techLevel>
     <tab>TLRSReseachDefTab</tab>

@@ -90,11 +90,12 @@
                 <kindDef>Combat</kindDef>
                 <commonality>50</commonality>
                 <options>
-                    <TLRS_Fighter_Ensign>230</TLRS_Fighter_Ensign>
-                    <TLRS_Fighter_Recon>120</TLRS_Fighter_Recon>
-                    <TLRS_Fighter_Lieutenant>100</TLRS_Fighter_Lieutenant>
-                    <TLRS_Tank>7</TLRS_Tank>
-                    <TLRS_ATCTank>3</TLRS_ATCTank>
+                    <TLRS_Fighter_Ensign>590</TLRS_Fighter_Ensign>
+                    <TLRS_Fighter_Recon>50</TLRS_Fighter_Recon>
+					<TLRS_Fighter_gunneer>30</TLRS_Fighter_gunneer>
+                    <TLRS_Fighter_Lieutenant>90</TLRS_Fighter_Lieutenant>
+                    <TLRS_Tank>3</TLRS_Tank>
+                    <TLRS_ATCTank>1</TLRS_ATCTank>
                     <!--<TLRS_SPGTank>5</TLRS_SPGTank>-->
                 </options>
             </li>
@@ -103,11 +104,12 @@
                 <kindDef>Combat</kindDef>
                 <commonality>50</commonality>
                 <options>
-                    <TLRS_Fighter_Ensign>230</TLRS_Fighter_Ensign>
-                    <TLRS_Fighter_Recon>100</TLRS_Fighter_Recon>
+                    <TLRS_Fighter_Ensign>610</TLRS_Fighter_Ensign>
+                    <TLRS_Fighter_Recon>40</TLRS_Fighter_Recon>
+					<TLRS_Fighter_gunneer>20</TLRS_Fighter_gunneer>
                     <TLRS_Fighter_Lieutenant>90</TLRS_Fighter_Lieutenant>
-                    <TLRS_Tank>10</TLRS_Tank>
-                    <TLRS_ATCTank>4</TLRS_ATCTank>
+                    <TLRS_Tank>3</TLRS_Tank>
+                    <TLRS_ATCTank>1</TLRS_ATCTank>
                     <TLRS_Settlement_Captain>1</TLRS_Settlement_Captain>
                     <!--<TLRS_SPGTank>10</TLRS_SPGTank>-->
                 </options>
@@ -116,8 +118,9 @@
                 <!--5%worker 45%escort 5%lieutenant 30%Ensign 15%recon ================================================================ -->
                 <kindDef>Settlement</kindDef>
                 <options>
-                    <TLRS_Fighter_Ensign>150</TLRS_Fighter_Ensign>
-                    <TLRS_Fighter_Recon>75</TLRS_Fighter_Recon>
+                    <TLRS_Fighter_Ensign>350</TLRS_Fighter_Ensign>
+                    <TLRS_Fighter_Recon>30</TLRS_Fighter_Recon>
+					<TLRS_Fighter_gunneer>30</TLRS_Fighter_gunneer>
                     <TLRS_Fighter_Lieutenant>25</TLRS_Fighter_Lieutenant>
                     <TLRS_Settlement_Escort>225</TLRS_Settlement_Escort>
                     <TLRS_Settlement_Worker>25</TLRS_Settlement_Worker>
@@ -133,6 +136,7 @@
                 <options>
                     <TLRS_Fighter_Ensign>230</TLRS_Fighter_Ensign>
                     <TLRS_Fighter_Recon>100</TLRS_Fighter_Recon>
+					<TLRS_Fighter_gunneer>100</TLRS_Fighter_gunneer>
                     <TLRS_Fighter_Lieutenant>80</TLRS_Fighter_Lieutenant>
                 </options>
             </li>

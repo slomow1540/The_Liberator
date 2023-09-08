@@ -2,8 +2,8 @@
 <Defs>
     <ThingDef ParentName="ResourceBase">
         <defName>ComponentArmoured</defName>
-        <label>Armoured component</label>
-        <description>Advanced computing and energy-directing machinery, miniaturized and hardened for the most demanding applications and designed to witstand shock and damages.</description>
+        <label>Armored component</label>
+        <description>Advanced computing and energy-directing machinery are miniaturized and hardened for the most demanding applications and designed to withstand shock and damage.</description>
         <graphicData>
             <texPath>Things/Item/TLRS_ComponentArmoured</texPath>
             <graphicClass>Graphic_Single</graphicClass>

@@ -60,9 +60,6 @@
             <li>Apparel_ArmorRecon</li>
             <li>Apparel_CollarShirt</li>
         </apparelRequired>
-        <techHediffsRequired>
-            <li>DeathAcidifier</li>
-        </techHediffsRequired>
         <useFactionXenotypes>false</useFactionXenotypes>
         <xenotypeSet>
             <xenotypeChances>
@@ -132,9 +129,6 @@
             <li>Apparel_FlakVest</li>
             <li>Apparel_FlakPants</li>
         </apparelRequired>
-        <techHediffsRequired>
-            <li>DeathAcidifier</li>
-        </techHediffsRequired>
         <useFactionXenotypes>false</useFactionXenotypes>
         <xenotypeSet>
             <xenotypeChances>
@@ -169,6 +163,45 @@
         <apparelRequired>
             <li>Apparel_ArmorRecon</li>
             <li>Apparel_ArmorHelmetRecon</li>
+            <li>Apparel_CollarShirt</li>
+        </apparelRequired>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.5</Hussar>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+	
+	<!-- Gunner unit -->
+
+    <PawnKindDef ParentName="TLRS_LiberatorBase">
+        <defName>TLRS_Fighter_gunneer</defName>
+        <label>Gunner</label>
+        <combatPower>120</combatPower>
+        <weaponMoney>7000~9000</weaponMoney>
+        <apparelMoney>9000~12000</apparelMoney>
+        <weaponTags>                        <!-- aaaaaaaaaaaaaaaaaaa -->
+            <li>TLRS_GunnerWeapon</li>
+        </weaponTags>
+        <apparelColor>(130,130,130)</apparelColor>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~12</range>
+            </li>
+        </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <initialResistanceRange>12~18</initialResistanceRange>
+        <initialWillRange>3~5</initialWillRange>
+        <apparelRequired>
+            <li>Apparel_PowerArmor</li>
+            <li>Apparel_PowerArmorHelmet</li>
             <li>Apparel_CollarShirt</li>
         </apparelRequired>
         <techHediffsRequired>

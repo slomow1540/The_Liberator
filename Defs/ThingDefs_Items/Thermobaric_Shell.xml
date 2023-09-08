@@ -5,7 +5,7 @@
     <ThingDef ParentName="MakeableShellBase">
         <defName>TLRS_Shell_Thermobaric</defName>
         <label>Thermobaric shell</label>
-        <description>A shell filled with explosive that uses oxygen from the surrounding air to generate a high-temperature explosion.Highly destructive againts buildings and structures but ineffective againts pawns.</description>
+        <description>A shell filled with explosive that uses oxygen from the surrounding air to generate a high-temperature explosion. Highly destructive against buildings and structures but ineffective against pawns.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>Things/Item/TLRS_Thermobaric_bomb</texPath>

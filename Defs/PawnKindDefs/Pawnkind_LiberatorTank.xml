@@ -9,12 +9,13 @@
         <combatPower>250</combatPower>
         <defaultFactionType>TLRS_LiberatorsFaction</defaultFactionType>
         <aiAvoidCover>true</aiAvoidCover>
+		<allowInMechClusters>false</allowInMechClusters>
         <destroyGearOnDrop>true</destroyGearOnDrop>
         <canStrip>false</canStrip>
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Vehicle/TLRS_tank_chasis</texPath>
+                    <texPath>Things/Pawn/Vehicle/TLRS_tank</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>8</drawSize>
                     <shadowData>
@@ -37,6 +38,7 @@
         <combatPower>400</combatPower>
         <defaultFactionType>TLRS_LiberatorsFaction</defaultFactionType>
         <aiAvoidCover>true</aiAvoidCover>
+		<allowInMechClusters>false</allowInMechClusters>
         <destroyGearOnDrop>true</destroyGearOnDrop>
         <canStrip>false</canStrip>
         <lifeStages>
